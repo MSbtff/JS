@@ -40,4 +40,32 @@ for (const key of personData.values()) {
     console.log(key);
 }
 
-personData.size()
+// personData.size()
+
+//map vs objects
+/*
+map은 어떤 자료형도 가능 섞여도 가능 큰 데이터 사용할경우 적합, 데이터를 자주 추가하거나 삭제할때
+더 좋은 성능가짐 빠른 데이터 변화가 필요할때
+
+obj은 자료형이 섞여도 되지만 문자열, 숫자, 심볼형만 사용가능 유연성이 떨어짐
+키로 불리언 x 다른 객체나 배열을 키로 못가짐
+객체는 작거나 중간 크기의 데이터 (30~40개)
+더 쉽고 빠르게 {}를 사용하여 근데 대부분 array, 객체 사용할 것
+*/
+
+let person = { name: 'Max' };
+const persons = new WeakSet(); //set에 저장한 객체 데이터중 사용하지 않게 된 일부를 내보내
+//해당 데이터가 가비지 컬렉션으로 수집되게하는 옵션
+persons.add(person);
+
+// person = null;
+
+console.log(person);
+
+const personData1 = new WeakMap();
+
+personData1.set(person, 'Extra info!');
+
+person = null;
+
+console.log(personData1);
