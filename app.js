@@ -189,3 +189,22 @@ const nameData = ['Max', 'Schwarz', 'Mr', 30];
 
 const [firstName, lastName, ...otherInformation] = nameData;
 console.log(firstName, lastName, otherInformation);
+
+
+//maps & sets
+
+/* arrays는  데이터의 리스트 또는 연결된 리스트는 주로 배열에 저장
+중첩 데이터, 어떤 종류, 길이, 자료형 가능 iterable이며 특별한 배열 메서드 사용가능
+요소의 순서가 보장됨 순서가 갑자기 바뀌지 않으며 같은 숫자 2개가 들어갈 수 있으며 0에서
+시작하는 인덱스를 사용하여 요소에 접근 가능
+
+sets은 데이터 구조로 어떤 길이의 중첩 데이터도 저장 배열의 sets 숫자의 sets등
+특별한 sets 메서드가 있는 iterable로 모든 배열 메서드를 사용할 수 없음
+Array.from 메서드를 사용하여 itrable을 배열로 변환할 수 있음
+배열과 다른점은 요소의 순서가 보장x, 중복허용x ex) Id같은것들 인덱스 기반 접근이 아님
+
+maps 키-값 데이터를 저장 객체와 비슷하지만 차이점은 객체는 오직 문자열 또는 숫자만
+키 또는 심볼형을 가질 수 있지만 maps는 키로 아무거나 사용할 수 있음 배열, 객체도 가질 수 있음
+훨씬 유연함 iteralbe로 배열 메서드를 사용x sets과 마찬가지로 여기에 사용하는 메서드는 maps에 있는
+항목 관리하기 위함, 순서는 보장되고 키로 값을 검색할 수 있어서 접근할 수 있음
+*/
