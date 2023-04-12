@@ -62,7 +62,7 @@ persons.add(person);
 
 console.log(person);
 
-const personData1 = new WeakMap();
+const personData1 = new WeakMap(); //규모가 클때 메모리 좀 더 효과적으로 관리
 
 personData1.set(person, 'Extra info!');
 
